@@ -3,7 +3,7 @@ import Header from "./Header";
 import Validation from "./Validation";
 const Login=()=>
 {
-  const [result,setresult]=useState(false);
+  const [result,setresult]=useState(false)
   const [validcheck,setvalidcheck]=useState(null)
   const email=useRef(null)
   const password=useRef(null)
