@@ -9,7 +9,7 @@ const Login=()=>
   const password=useRef(null)
   function newuser()
   {
-    setresult(!result);
+    setresult(!result)
   };
   const validateuser=()=>
   {
