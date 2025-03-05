@@ -1,12 +1,17 @@
 import Header from "./Header"
-import Login from "./Login"
+import Maincontainer from "./Maincontainer"
+import useNowPlaying from "../hooks/useNowPlaying"
+import Secondarycontainer from "./Secondarycontainer";
+import Footer from "./Footer";
 const Browse=()=>
 {
+    useNowPlaying();
     return(
-        <div>
-            <div className="w-[100%] bg-slate-500 h-[auto] absolute pb-20">
-                <Login />
-            </div>
+        <div className="absolute bg-black">
+            <Header />
+            <Maincontainer />
+            <Secondarycontainer />
+            <Footer />
         </div>
     )
 }
